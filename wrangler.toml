@@ -1,0 +1,15 @@
+name = "fireworks-proxy"
+main = "worker.js"
+compatibility_date = "2025-04-01"
+
+# Workers são gratuitos até 100k requests/dia.
+# Não precisa de Workers Paid: o plano Free cobre requisições
+# e 10ms de CPU por request. Tamanho do worker.js: alguns KB.
+
+[vars]
+# Opcional: defina sua API key do Fireworks aqui se quiser
+# que o proxy funcione sem o cliente enviar Authorization.
+# FIREWORKS_API_KEY = "fw_..."
+
+# Se quiser domínio customizado, configure no dashboard do
+# Cloudflare: Workers & Pages > seu-worker > Triggers > Custom Domains
